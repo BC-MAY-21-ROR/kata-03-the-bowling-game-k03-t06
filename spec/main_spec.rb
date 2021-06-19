@@ -21,7 +21,7 @@ RSpec.describe Frames do
 
   it 'do strike' do
     roll.roll_one = 10
-    expect(roll.bonus).to eql 'strike'
+    expect(roll.bonus(0)).to eql 'strike'
   end
 
 
